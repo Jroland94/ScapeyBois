@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+button{
+padding: 8px 16px;
+background-color: #CA3446;
+border-radius: 8px;
+border: none;
+color: #FDEB6A;
+font-weight: bold;
+}
+
+#discord_button{
+background-image: url("assets/images/discord_logo.png");
+    background-repeat: no-repeat;
+    background-position: 10px center; /* Plaats het logo links van de tekst */
+    background-size: 20px 20px;
+    padding: 8px 32px;
+    margin-top: 20px;
+background-color:#5965F2 ;
+color: white;
+cursor: pointer;
+}
+
+#discord_button:hover{
+transform: scale(1.1);
+transition: 0.3s;
+}
+
+.container{
+width: 1024px;
+margin-inline: auto;
+padding: 10px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    gap: 20px; 
+}
+
+nav a{
+    color:#FDEB6A ;
+}
+
+nav li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.header{
+background-color: #281E2395;
+position: sticky;
+top: 0;
+backdrop-filter: blur(10px);
+}
+
+.header_content{
+    display: flex;
+    padding-block: 0px ;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    font-weight: bold;
+}
+
+.hero{
+background-color: #CA3446;
+font-weight: bold;
+height: 400px;
+color: #FDEB6A;
+padding: 20px;
+background-image: url("/assets/images/osrs_banner.jpg");
+background-position: center top;
+margin-top: -70px;
+}
+
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 80px;
+}
+
+.about_wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 30px;
+}
+
+.about_content{
+ display: flex;  
+ flex-direction: column; 
+ gap: 16px;
+}
+
+.about_content h3{
+    font-size: 24px;
+    color: #281E23;
+}
+.about{
+display: flex;
+justify-content: space-between;
+}
+
+.about img{
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 50px;
+    border-radius: 16px;
+}
+.ranking{
+padding-block: 10px;
+}
+
+.ranking_items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.ranking_item{
+    padding: 10px;
+    background-color: #CA3446;
+    position: relative;
+    border-radius: 8px;
+}
+.ranking_item::after{
+    content: ">";
+    position: absolute;
+    right: -16px;
+}
+.ranking_content{
+    font-size: 24px;
+    padding-block: 20px;
+}
+.events{
+
+}
+
+footer{
+
+}
