@@ -1,153 +1,259 @@
-*{
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: 'rokkitt';
+    src: url("./assets/fonts/rokkitt.ttf");
 }
 
-#logo{
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'rokkitt', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to top, #a9a6a6, white);
+    min-height: 100vh;
+}
+
+a {
+    color: #CA3446;
+}
+
+#logo {
     width: 50px;
     height: 50px;
 }
 
-button{
-padding: 8px 16px;
-background-color: #CA3446;
-border-radius: 8px;
-border: none;
-color: #FDEB6A;
-font-weight: bold;
+h3 {
+    font-weight: bold;
+    font-size: 24px;
 }
 
-#discord_button{
-background-image: url("assets/images/discord_logo.png");
+button {
+    padding: 8px 16px;
+    background-color: #CA3446;
+    border-radius: 8px;
+    border: none;
+    color: #FDEB6A;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#discord_button {
+    background-image: url("assets/images/discord_logo.png");
+    opacity: 0.9;
     background-repeat: no-repeat;
     background-position: 10px center; /* Plaats het logo links van de tekst */
     background-size: 20px 20px;
     padding: 8px 32px;
     margin-top: 20px;
-background-color:#5965F2 ;
-color: white;
-cursor: pointer;
+    background-color: #5965F2;
+    color: white;
+    cursor: pointer;
 }
 
-#discord_button:hover{
-transform: scale(1.1);
-transition: 0.3s;
-}
-
-.container{
-width: 1024px;
-margin-inline: auto;
-padding: 10px;
-}
-
-nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    gap: 20px; 
-}
-
-nav a{
-    color:#FDEB6A ;
-}
-
-nav li:hover{
+#discord_button:hover {
     transform: scale(1.1);
     transition: 0.3s;
 }
 
-.header{
-background-color: #281E2395;
-position: sticky;
-top: 0;
-backdrop-filter: blur(10px);
+.background_grey {
+    /*background-color: #a9a6a6;*/
 }
 
-.header_content{
+.background_grey_gradient {
+    /*background-image: linear-gradient(to top, #a9a6a6, white);*/
+}
+
+
+.container {
+    width: 1024px;
+    margin-inline: auto;
+    padding: 10px;
+}
+
+
+nav ul {
     display: flex;
-    padding-block: 0px ;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: #CA3446;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.header {
+    background-color: #281E2395;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+}
+
+.header_content {
+    display: flex;
+    padding-block: 0px;
     justify-content: space-between;
     width: 100%;
     align-items: center;
     font-weight: bold;
 }
 
-.hero{
-background-color: #CA3446;
-font-weight: bold;
-height: 400px;
-color: #FDEB6A;
-padding: 20px;
-background-image: url("/assets/images/osrs_banner.jpg");
-background-position: center top;
-margin-top: -70px;
+.hero {
+    font-weight: bold;
+    height: 240px;
+    color: #FDEB6A;
+    padding: 20px;
+    background-image: url("./assets/images/osrs_banner.jpg");
+    background-position: center top;
+    margin-top: -70px;
 }
 
-.hero_content{
+.hero_content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 80px;
+    font-size: 24px;
 }
 
-.about_wrapper{
+.about_wrapper {
     display: flex;
     justify-content: space-between;
     padding-block: 30px;
 }
 
-.about_content{
- display: flex;  
- flex-direction: column; 
- gap: 16px;
+.about_content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-.about_content h3{
-    font-size: 24px;
-    color: #281E23;
-}
-.about{
-display: flex;
-justify-content: space-between;
+
+.about {
+    display: flex;
+    justify-content: space-between;
 }
 
-.about img{
+.about img {
     width: 300px;
     height: auto;
     object-fit: cover;
     margin-right: 50px;
     border-radius: 16px;
 }
-.ranking{
-padding-block: 10px;
+
+.ranking {
 }
 
-.ranking_items{
+.ranking_items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
 }
-.ranking_item{
+
+.ranking_item {
     padding: 10px;
     background-color: #CA3446;
     position: relative;
     border-radius: 8px;
+    color: #FDEB6A;
 }
-.ranking_item::after{
+
+.ranking_item:not(:last-child):after {
     content: ">";
     position: absolute;
-    right: -16px;
+    right: -20px;
+    color: #281E23;
+    font-size: 32px;
+    top: 4px;
 }
-.ranking_content{
+
+.ranking_content {
     font-size: 24px;
     padding-block: 20px;
 }
-.events{
+
+.events {
 
 }
 
-footer{
+.events img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 50px;
+    border-radius: 8px;
+
+}
+
+.events_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding-block: 30px;
+
+}
+
+.events_content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.events_content h3 {
+    font-size: 24px;
+    color: #281E23;
+}
+
+.events button {
+
+}
+
+.clan_info_p{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+.clan_info_list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ranks_img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.onze_ranks_content {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+footer {
+    background-color: #281E23;
+    color: #FDEB6A;
+    opacity: 0.9;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 
 }
